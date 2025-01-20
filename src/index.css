@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* עיצוב הגלריה כולה */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* ממקם את הגלריה באמצע אנכית */
+  text-align: center;
+}
+
+/* עיצוב הכותרת */
+.gallery-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* עיצוב התמונה */
+.gallery-image {
+  width: 300px; /* רוחב קבוע */
+  height: 300px; /* גובה קבוע */
+  object-fit: cover; /* מתאימה את התמונה לתיבה בצורה פרופורציונלית */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* עיצוב הכפתורים */
+.gallery-buttons {
+  display: flex;
+  gap: 10px; /* מרווח בין הכפתורים */
+}
+
+.gallery-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gallery-button:hover {
+  background-color: #0056b3;
+}
+

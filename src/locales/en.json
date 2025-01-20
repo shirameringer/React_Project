@@ -1,0 +1,19 @@
+{
+    "contacts": {
+        "name": "Enter your name:",
+        "email": "Enter your email:",
+        "address": "Enter your address:",
+        "telephone": "Enter your telephone number:",
+        "submit": "Submit"
+    },
+    "home": {
+        "title": "Welcome to the company TechFolw",
+        "description": "At TechFolw, we strive to provide top-notch services that empower businesses to grow."
+    },
+    "about": {
+        "description": "TechFolw is an innovative startup focused on providing cutting-edge solutions to address the evolving needs of the tech industry. Our mission is to empower businesses with the latest technologies, enabling them to streamline operations, enhance efficiency, and accelerate growth. At TechFolw, we are dedicated to driving progress and helping companies stay ahead in a fast-paced digital world. We take pride in offering top-tier services and building long-lasting relationships with our clients."
+    },
+    "services": {
+        "title": "Services"
+    }
+}
