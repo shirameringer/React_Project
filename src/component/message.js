@@ -1,13 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 function Message() {
-    const {t}=useTranslation()
+    const { t } = useTranslation()
     return (
-        <>
-
-            <p>"Thank you for joining our company! We are excited to have you with us and look forward to working together."
-            </p>
-        </>
+        <div className="container mt-5">
+            <h1 className="text-danger">{t('Message')}</h1>
+            <p className="text-black">{t('message.description')}</p>
+            <button className="btn btn-outline-success">{t('message.button')}</button>
+        </div>
     )
 }
 export default Message;

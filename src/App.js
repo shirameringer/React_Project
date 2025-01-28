@@ -6,11 +6,12 @@ import My_App from './component/My_App';
 import Todos from './redux/todosComponent';
 import store from './redux/store';
 import { Provider } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App(){
   return(
     <div>
-     <My_App></My_App>
+      <My_App></My_App>
     <Provider store={store}><Todos /></Provider>
     </div>
   )
