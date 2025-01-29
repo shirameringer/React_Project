@@ -1,4 +1,4 @@
-import { ADD_TO_DO, REMOVE_TO_DO } from './actionTypes';
+import { ADD_TO_DO, REMOVE_TO_DO,RESTORE} from './actionTypes';
 const initalState = {
     todos:[],
 };
@@ -13,7 +13,9 @@ export const manegerTask = (state = initalState, action) => {
         case ADD_TO_DO:
             return { ...state, todos: [...state.todos, action.payload] }
         case REMOVE_TO_DO:
-            return { ...state, todos: creatNewArr(state.todos,action.payload) }
+            return { ...state, todos: creatNewArr(state.todos,action.payload.taskId) }
+        case RESTORE:
+            return{...state, todos: [...state.todos, action.payload] }
         default:
             return state;
     } 

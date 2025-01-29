@@ -3,14 +3,14 @@ import { add, remove } from '../redux/action';
 import { useState } from 'react';
 
 const Todos = () => {
-    const Tasks = useSelector((state) => state.todos);
+    const Tasks = useSelector((state) => state.todos.todos);
     const dispatch = useDispatch();
     const [name, setName] = useState("");
     const [id, setId] = useState("");
     function toAddTask() {
-        if(name&&id){
+        
             dispatch(add({ taskName: name, taskId: id }));
-        }
+       
        
             // document.getElementById("name").value = "";
             // document.getElementById("id").value = "";
@@ -59,7 +59,7 @@ const Todos = () => {
                 </span>
                 <button
                   className="btn btn-danger"
-                  onClick={() => dispatch(remove(task.taskId))}
+                  onClick={() => dispatch(remove(task))}
                 >
                   Remove
                 </button>
